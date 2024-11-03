@@ -4,5 +4,5 @@ import { adex } from 'adex'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [preact(), adex({ islands: false })],
+  plugins: [preact(), adex({ islands: true })],
 })

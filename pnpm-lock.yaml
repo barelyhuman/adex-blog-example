@@ -28,8 +28,8 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10)
       adex:
-        specifier: ^0.0.10
-        version: 0.0.10(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1)
+        specifier: ^0.0.11
+        version: 0.0.11(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -509,8 +509,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  adex@0.0.10:
-    resolution: {integrity: sha512-pkJPnvQ1CXjaNQHH0q3NwkJZ5owyK+Nk+t2iUIEI0lw8sqDNmMHTZ8iGSmA7JgVtYpNBcauRieRcJZbhoFEcVQ==}
+  adex@0.0.11:
+    resolution: {integrity: sha512-nFb56MpOUHSg+Xf2IxKZR9VK4NMvE7S8mpllA5bLT/Enkc8UXpV8/b+vFdNka5bwudEtPX/B3mEkPPmqzs/Scw==}
     peerDependencies:
       '@preact/preset-vite': '>=2.8.2'
       preact: ^10.22.0
@@ -1980,7 +1980,7 @@ snapshots:
 
   acorn@8.13.0: {}
 
-  adex@0.0.10(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1):
+  adex@0.0.11(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1):
     dependencies:
       '@dumbjs/preland': 0.0.2(astring@1.9.0)
       '@preact/preset-vite': 2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10)
