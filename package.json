@@ -20,7 +20,8 @@
   "devDependencies": {
     "@barelyhuman/prettier-config": "^2.0.2",
     "@preact/preset-vite": "^2.9.1",
-    "adex": "^0.0.11",
+    "adex": "^0.0.19",
+    "adex-adapter-node": "^0.0.19",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "prettier": "^3.3.3",
