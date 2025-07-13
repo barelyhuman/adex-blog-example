@@ -1,0 +1,1 @@
+{"root":["./knexfile.js","./postcss.config.js","./tailwind.config.js","./vite.config.ts","./migrations/20241023145317_init.js","./src/api/posts.ts","./src/components/NewPostForm.tsx","./src/components/PostList.tsx","./src/lib/db.ts","./src/pages/index.tsx"],"version":"5.6.3"}
