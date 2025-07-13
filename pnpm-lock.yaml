@@ -28,8 +28,11 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10)
       adex:
-        specifier: ^0.0.11
-        version: 0.0.11(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1)
+        specifier: ^0.0.19
+        version: 0.0.19(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(adex-adapter-node@0.0.19)(astring@1.9.0)(preact@10.24.3)(react@18.3.1)
+      adex-adapter-node:
+        specifier: ^0.0.19
+        version: 0.0.19
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -164,6 +167,9 @@ packages:
   '@barelyhuman/prettier-config@2.0.2':
     resolution: {integrity: sha512-ES+UvAEoRgQ/tymiU3Kqd2L1ltnTezLdecFdqdNvleS4Xv/87Rpjp7yO19OabCkLwcu6SCExYv23cQ4R0YBHww==}
     hasBin: true
+
+  '@barelyhuman/tiny-use@0.0.2':
+    resolution: {integrity: sha512-+06gOhdW8TOuCuKcuA+WXrQhhAid0q58t/7FiaD6Gjj5S7wrp5j9Of23mkg2LHnNcwuy7+O9iWXQaQAj3Yj09A==}
 
   '@dumbjs/preland@0.0.2':
     resolution: {integrity: sha512-rVLWsMkTAZAeDQ+PsGIZ0ykqQPrE5mpEoR0R4+eJHoHk8eVKDBIhQUhkzqofejSBS85B6b3b1OUbIMNGlTVHaw==}
@@ -477,6 +483,7 @@ packages:
 
   acorn-import-assertions@1.9.0:
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
 
@@ -509,11 +516,18 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  adex@0.0.11:
-    resolution: {integrity: sha512-nFb56MpOUHSg+Xf2IxKZR9VK4NMvE7S8mpllA5bLT/Enkc8UXpV8/b+vFdNka5bwudEtPX/B3mEkPPmqzs/Scw==}
+  adex-adapter-node@0.0.19:
+    resolution: {integrity: sha512-d7ot1uXUMf6dGoThX5EsJ9vOJ+D39LjUULJjvvVzeePmT4j/pwe1goA4un/v6aBlzsftuzFEYHurxgQTUQ+bMA==}
+
+  adex@0.0.19:
+    resolution: {integrity: sha512-VLb+6aun057tet540paezR/sfqLTN5bqx0u6ApsHw484obTUApiV/r7mz73+upi9yypQ+pdSrYrQtWoexvsgFA==}
     peerDependencies:
       '@preact/preset-vite': '>=2.8.2'
+      adex-adapter-node: '>=0.0.15'
       preact: ^10.22.0
+    peerDependenciesMeta:
+      adex-adapter-node:
+        optional: true
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1129,6 +1143,10 @@ packages:
   node-releases@2.0.18:
     resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
 
+  node-stream-zip@1.15.0:
+    resolution: {integrity: sha512-LN4fydt9TqhZhThkZIVQnF9cwjU3qmUH9h78Mx/K7d3VvfRqqwthLwJEUOEL0QPZ0XQmNN7be5Ggit5+4dq3Bw==}
+    engines: {node: '>=0.12.0'}
+
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
@@ -1252,6 +1270,12 @@ packages:
   postcss@8.4.47:
     resolution: {integrity: sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ==}
     engines: {node: ^10 || ^12 || >=14}
+
+  preact-iso@2.9.2:
+    resolution: {integrity: sha512-0AiOid/B/L+cGQerFam2dSV8dkwmRXxqFyDcpdDj2faDuv83YF/g9HYX7MGKWjqSOaQGcl0HLMSFkUIzCq+z+g==}
+    peerDependencies:
+      preact: '>=10'
+      preact-render-to-string: '>=6.4.0'
 
   preact-render-to-string@6.5.11:
     resolution: {integrity: sha512-ubnauqoGczeGISiOh6RjX0/cdaF8v/oDXIjO85XALCQjwQP+SB4RDXXtvZ6yTYSjG+PC1QRP2AhPgCEsM2EvUw==}
@@ -1715,6 +1739,8 @@ snapshots:
 
   '@barelyhuman/prettier-config@2.0.2': {}
 
+  '@barelyhuman/tiny-use@0.0.2': {}
+
   '@dumbjs/preland@0.0.2(astring@1.9.0)':
     dependencies:
       '@barelyhuman/astring-jsx': 2.0.1(astring@1.9.0)
@@ -1980,20 +2006,27 @@ snapshots:
 
   acorn@8.13.0: {}
 
-  adex@0.0.11(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(astring@1.9.0)(preact@10.24.3)(react@18.3.1):
+  adex-adapter-node@0.0.19: {}
+
+  adex@0.0.19(@preact/preset-vite@2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10))(adex-adapter-node@0.0.19)(astring@1.9.0)(preact@10.24.3)(react@18.3.1):
     dependencies:
+      '@barelyhuman/tiny-use': 0.0.2
       '@dumbjs/preland': 0.0.2(astring@1.9.0)
       '@preact/preset-vite': 2.9.1(@babel/core@7.25.9)(preact@10.24.3)(vite@5.4.10)
       bumpp: 9.7.1
       dotenv: 16.4.5
       hoofd: 1.7.1(react@18.3.1)
       mri: 1.2.0
+      node-stream-zip: 1.15.0
       preact: 10.24.3
+      preact-iso: 2.9.2(preact-render-to-string@6.5.11(preact@10.24.3))(preact@10.24.3)
       preact-render-to-string: 6.5.11(preact@10.24.3)
       regexparam: 3.0.0
       sirv: 2.0.4
       trouter: 4.0.0
       unifont: 0.0.2
+    optionalDependencies:
+      adex-adapter-node: 0.0.19
     transitivePeerDependencies:
       - astring
       - magicast
@@ -2562,6 +2595,8 @@ snapshots:
 
   node-releases@2.0.18: {}
 
+  node-stream-zip@1.15.0: {}
+
   normalize-path@3.0.0: {}
 
   normalize-range@0.1.2: {}
@@ -2666,6 +2701,11 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  preact-iso@2.9.2(preact-render-to-string@6.5.11(preact@10.24.3))(preact@10.24.3):
+    dependencies:
+      preact: 10.24.3
+      preact-render-to-string: 6.5.11(preact@10.24.3)
 
   preact-render-to-string@6.5.11(preact@10.24.3):
     dependencies:
